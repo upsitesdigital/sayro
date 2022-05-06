@@ -1,0 +1,49 @@
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" 
+  version="1.1" 
+  id="Layer_1" 
+  x="0px" y="0px" 
+  viewBox="0 0 207 207" style="enable-background:new 0 0 207 207;" 
+  xml:space="preserve">
+
+
+
+
+
+
+
+
+
+
+
+<g filter="url(#filter0_d_12_498)">
+<circle cx="103.5" cy="63.5" r="43.5" fill="white"/>
+</g>
+<path d="M122 64L93.5 80.4545L93.5 47.5455L122 64Z" fill="url(#paint0_linear_12_498)"/>
+<defs>
+<filter id="filter0_d_12_498" x="0" y="0" width="207" height="207" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="40"/>
+<feGaussianBlur stdDeviation="30"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.45 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_12_498"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_12_498" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_12_498" x1="122" y1="45" x2="122" y2="85.375" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF6052"/>
+<stop offset="0.270833" stop-color="#EDC066"/>
+<stop offset="0.510417" stop-color="#7CDC70"/>
+<stop offset="0.776042" stop-color="#54CFE5"/>
+<stop offset="1" stop-color="#199ED6"/>
+</linearGradient>
+</defs>
+</svg>

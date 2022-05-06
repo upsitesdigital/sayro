@@ -1,0 +1,191 @@
+/*======================================
+  Main structure
+======================================*/
+
+body {
+  background: #F4F4F4;
+  // background: #F4F4F4 url(/assets/images/bg.png) top center no-repeat;
+}
+
+// header
+header {
+  width: 100%;
+  background: $color-white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  .grid {
+    @include columns( $quant: 66px auto 65px, $gutter: 0px, $align: center, $template: '');
+    .box-logo {
+      width: 100%;
+      height: 70px;
+      border-right: 1px solid #E9E9E9;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 12px 0 0 9px;
+      }
+    }
+    .box-menu {
+      width: 100%;
+      nav {
+        ul {
+          display: flex;
+          justify-content: space-around;
+          padding: 0 47px;
+          li {
+            a {
+              font-family: 'Archivo';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 140%;
+              letter-spacing: 0.02em;
+              color: #757882;
+            }
+          }
+        }
+      }
+    }
+    .box-search {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .pb {
+        display: block;
+        margin: 0 0 0 -2px;
+        .icon {
+          width: 24px;
+          height: 24px;
+          stroke-width: 1.5px;
+          stroke: #757882;
+          fill: transparent;
+        }
+      }
+      .search {
+        display: block;
+        margin: 4px -1px 0 0px;
+        .icon {
+          width: 18px;
+          height: 18px;
+          stroke-width: 2px;
+          stroke: #FF6052;
+          fill: transparent;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint2($min:xl, $max:'') {}
+
+@include breakpoint2($min:lg, $max:xl) {}
+
+@include breakpoint2($min:md, $max:lg) {}
+
+@include breakpoint2($min:sm, $max:md) {}
+
+@include breakpoint2($min:xs, $max:sm) {}
+
+@include breakpoint2($min:'', $max:xs) {}
+
+// end header
+// main
+main {}
+
+@include breakpoint2($min:xl, $max:'') {}
+
+@include breakpoint2($min:lg, $max:xl) {}
+
+@include breakpoint2($min:md, $max:lg) {}
+
+@include breakpoint2($min:sm, $max:md) {}
+
+@include breakpoint2($min:xs, $max:sm) {}
+
+@include breakpoint2($min:'', $max:xs) {}
+
+// end main
+// footer
+footer {
+  background-color: $color-white;
+  .grid-top {
+    @include columns( $quant: 50px auto, $gutter: 0, $align: center, $template: '');
+    border-bottom: 1px solid #EBEBEB;
+    .box-logo {
+      padding: 4px 0 0 9px;
+    }
+    .box-menu {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 51px 9px 42px 91px;
+        li {
+          a {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            letter-spacing: 0.02em;
+            color: #757882;
+          }
+        }
+      }
+    }
+  }
+  .grid-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 33px 9px 49px 6px;
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+      color: #757882;
+    }
+    .social-midia {
+      a {
+        display: inline-block;
+        margin: 0 6px;
+        .icon {
+          width: 24px;
+          height: 24px;
+          fill: #FF6052;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint2($min:xl, $max:'') {}
+
+@include breakpoint2($min:lg, $max:xl) {}
+
+@include breakpoint2($min:md, $max:lg) {}
+
+@include breakpoint2($min:sm, $max:md) {
+  footer {
+    .grid {
+      @include columns( $quant: repeat(3, 1fr), $gutter: 20px, $align: top, $template: '');
+    }
+  }
+}
+
+@include breakpoint2($min:xs, $max:sm) {
+  footer {
+    .grid {
+      @include columns( $quant: repeat(2, 1fr), $gutter: 20px, $align: top, $template: '');
+    }
+  }
+}
+
+@media (max-width: map-get($breakpoints, xs)) {
+  footer {
+    .grid {
+      @include columns( $quant: 1fr, $gutter: 30px, $align: top, $template: '');
+    }
+  }
+}
+
+// end footer
