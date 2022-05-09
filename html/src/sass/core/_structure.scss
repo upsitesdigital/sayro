@@ -4,7 +4,14 @@
 
 body {
   background: #F4F4F4;
-  // background: #F4F4F4 url(/assets/images/bg.png) top center no-repeat;
+  background: #F4F4F4 url(/assets/images/bg.png) top center no-repeat;
+}
+
+.dark {
+  filter: invert(100%);
+  img {
+    filter: invert(100%);
+  }
 }
 
 // header
@@ -92,7 +99,11 @@ header {
 
 // end header
 // main
-main {}
+main {
+  &.bg-white {
+    background: $color-white;
+  }
+}
 
 @include breakpoint2($min:xl, $max:'') {}
 

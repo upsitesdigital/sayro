@@ -407,6 +407,11 @@
   &.P27 {
     padding-bottom: 27px;
   }
+  &.gray {
+    .box {
+      background: #F3F3F3;
+    }
+  }
 }
 
 .featured-videos {
@@ -716,7 +721,7 @@
 
 .title-section {
   width: 100%;
-  height: 143px;
+  // height: 143px;
   background-color: #000000;
   margin: 0 0 43px 0;
   h1 {
@@ -725,6 +730,13 @@
     line-height: 140%;
     color: #FFFFFF;
     padding: 49px 0 44px 10px;
+  }
+  &.small {
+    h1 {
+      font-size: 32px;
+      line-height: 120%;
+      padding: 38px 0 28px 10px;
+    }
   }
 }
 
@@ -1190,6 +1202,82 @@
           &:after {
             height: 2px;
             background-color: #85DA70;
+          }
+        }
+      }
+    }
+  }
+}
+
+.box-app {
+  text-align: center;
+  padding: 0 0 48px 0;
+  border-bottom: 1px solid #CBCBCB;
+}
+
+.anchor-content {
+  padding: 100px 0 116px 0;
+  .grid {
+    @include columns( $quant: 35.3% 58.7%, $gutter: 6%, $align: start, $template: '');
+    .sidebar {
+      padding: 4px 0 0 0;
+      ul {
+        li {
+          a {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 120%;
+            color: #757882;
+            padding: 12px 0 12px 0;
+            display: flex;
+            align-items: center;
+            &:before {
+              content: '';
+              width: 6px;
+              height: 6px;
+              display: block;
+              background-color: #C4C4C4;
+              border-radius: 50%;
+              margin: -3px 16px 0 2px;
+            }
+          }
+          &.act {
+            a {
+              font-weight: 500;
+              color: #172241;
+              &:before {
+                background-color: #85DA70;
+              }
+            }
+          }
+        }
+      }
+    }
+    .content {
+      .block-content {
+        padding: 5px 10px 26px 0;
+        h2 {
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 120%;
+          color: #172241;
+          padding: 0 0 17px 0;
+        }
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 156%;
+          color: #5F6268;
+          padding: 0 0 24px 0;
+        }
+        ul {
+          padding: 1px 23px 24px 23px;
+          li {
+            list-style: disc;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 156%;
+            color: #5F6268;
           }
         }
       }
