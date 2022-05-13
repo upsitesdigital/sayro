@@ -35,7 +35,7 @@
       font-size: 14px;
       line-height: 100%;
       color: #FF6052;
-      display: flex;
+      display: inline-flex;
       align-items: center;
       .icon {
         width: 24px;
@@ -44,6 +44,10 @@
         margin-left: 9px;
         stroke: #FF6052;
         stroke-width: 2px;
+      }
+      @include animate($time: 0.3s);
+      &:hover {
+        transform: scale(1.1);
       }
     }
   }
@@ -104,7 +108,7 @@
       font-size: 14px;
       line-height: 100%;
       color: $color-white;
-      display: flex;
+      display: inline-flex;
       align-items: center;
       .icon {
         width: 24px;
@@ -113,6 +117,10 @@
         margin-left: 9px;
         stroke: $color-white;
         stroke-width: 2px;
+      }
+      @include animate($time: 0.3s);
+      &:hover {
+        transform: scale(1.1);
       }
     }
   }
@@ -167,6 +175,13 @@
         transform: rotate(90deg);
         margin-left: 7px;
       }
+      @include animate($time: 0.3s);
+      &:hover {
+        transform: scale(1.5) rotate(-90deg);
+        &.next {
+          transform: scale(1.5) rotate(90deg);
+        }
+      }
     }
     .dots {
       ul {
@@ -184,6 +199,10 @@
             display: block;
             padding: 0;
             margin: 0 auto;
+            @include animate($time: 0.3s);
+            &:hover {
+              transform: scale(1.5);
+            }
           }
           &.slick-active {
             button {
@@ -260,7 +279,7 @@
           font-size: 16px;
           line-height: 100%;
           color: #FF6052;
-          display: flex;
+          display: inline-flex;
           align-items: center;
           .icon {
             width: 24px;
@@ -269,6 +288,10 @@
             margin-left: 9px;
             stroke: #FF6052;
             stroke-width: 2px;
+          }
+          @include animate($time: 0.3s);
+          &:hover {
+            transform: scale(1.1);
           }
         }
       }
@@ -302,6 +325,13 @@
         transform: rotate(180deg);
         margin-top: 27px;
       }
+      @include animate($time: 0.3s);
+      &:hover {
+        transform: scale(1.5);
+        &.next {
+          transform: scale(1.5) rotate(180deg);
+        }
+      }
     }
     .dots {
       ul {
@@ -318,6 +348,10 @@
             display: block;
             padding: 0;
             margin: 0 auto;
+            @include animate($time: 0.3s);
+            &:hover {
+              transform: scale(1.5);
+            }
           }
           &.slick-active {
             button {
@@ -439,6 +473,7 @@
           padding: 0;
           border: none;
           background: transparent;
+          justify-content: center;
           .icon {
             width: 24px;
             height: 24px;
@@ -453,6 +488,13 @@
           &.next {
             transform: rotate(180deg);
             margin-top: 27px;
+          }
+          @include animate($time: 0.3s);
+          &:hover {
+            transform: scale(1.5) rotate(180deg);
+            &.next {
+              transform: scale(1.5) rotate(180deg);
+            }
           }
         }
         .dots {
@@ -470,6 +512,10 @@
                 display: block;
                 padding: 0;
                 margin: 0 auto;
+                @include animate($time: 0.3s);
+                &:hover {
+                  transform: scale(1.5);
+                }
               }
               &.slick-active {
                 button {
@@ -494,13 +540,17 @@
     .link {
       grid-area: link;
       a {
-        display: flex;
+        display: inline-flex;
         align-items: center;
         .icon {
           width: 32px;
           height: 32px;
           fill: transparent;
           margin-right: 56px;
+        }
+        @include animate($time: 0.3s);
+        &:hover {
+          transform: scale(1.1);
         }
       }
     }
@@ -542,7 +592,12 @@
           img {
             width: 207px;
             height: 207px;
-            margin-top: 78px;
+            transform: translate(0, 38px);
+            // margin-top: 78px;
+            @include animate($time: 0.3s);
+            &:hover {
+              transform: translate(0, 48px) scale(1.5);
+            }
           }
         }
       }
@@ -657,6 +712,10 @@
               background: #FF6052 url(/assets/img/arrow.png) center center no-repeat;
               background-size: contain;
               cursor: pointer;
+            }
+            @include animate($time: 0.3s);
+            &:hover {
+              transform: scale(1.1);
             }
           }
         }
@@ -792,6 +851,7 @@
     display: flex;
     align-items: center;
     margin: 0 38px;
+    justify-content: center;
     .icon {
       width: 24px;
       height: 24px;

@@ -74,7 +74,7 @@
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	eval("/* WEBPACK VAR INJECTION */(function($) {'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nexports.default = function () {\n  $(document).on('click', '.anchor', function () {\n    var $target = $(this).attr('href');\n    var $offset = $($target).position().top;\n    $('body,html').animate({ scrollTop: $offset }, 1000);\n    return false;\n  });\n};\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/js/pages/_home.js\n// module id = 5\n// module chunks = 0\n//# sourceURL=webpack:///./src/js/pages/_home.js?");
+	eval("/* WEBPACK VAR INJECTION */(function($) {'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nexports.default = function () {\n  $(document).on('click', '.anchor', function () {\n    var $target = $(this).attr('href');\n    var $offset = $($target).position().top;\n    $('body,html').animate({ scrollTop: $offset }, 1000);\n    return false;\n  });\n\n  $(document).on('click', '#pb', function () {\n    $('body').toggleClass('dark');\n    return false;\n  });\n};\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/js/pages/_home.js\n// module id = 5\n// module chunks = 0\n//# sourceURL=webpack:///./src/js/pages/_home.js?");
 
 /***/ })
 /******/ ]);
